@@ -1,4 +1,7 @@
 spring:
+  application:
+    name: user_service
+
   datasource:
     url: jdbc:postgresql://localhost:5432/user_service
     username: postgres
@@ -21,8 +24,9 @@ app:
     secret: ReplaceWithAStrongSecretAtLeast32CharsLong!
     accessExpirationMs: 900000
     refreshExpirationMs: 604800000
+
 eureka:
   client:
     enabled: true
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://localhost:8761/eureka/

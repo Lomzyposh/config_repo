@@ -7,7 +7,7 @@ spring:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: eureka_server
   client:
     enabled: false           # <--- FORCE disable client behavior
     register-with-eureka: false
